@@ -12,7 +12,17 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
+app.get('/article-two', function (req, res) {
+  res.send(path.join('HI GUYS! WELCOME TO COOL WORLD'));
+});
 
+app.get('/article-three', function (req, res) {
+  res.send(path.join('HI GUYS! WELCOME TO my WORLD'));
+});
+
+app.get('/article-one', function (req, res) {
+  res.send(path.join('HI GUYS! WELCOME TO OUR WORLD'));
+});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
